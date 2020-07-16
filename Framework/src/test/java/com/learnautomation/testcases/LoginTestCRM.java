@@ -8,7 +8,6 @@ import com.learnautomation.pages.LoginPage;
 import com.learnautomation.utility.ExcelDataProvider;
 import com.learnautomation.utility.Helper;
 
-
 public class LoginTestCRM extends BaseClass{
 	
 	@Test(priority=1)
@@ -27,10 +26,7 @@ public class LoginTestCRM extends BaseClass{
 		
 		logger.pass("Loggin successfully");
 		
-			
 	}
-	
-	
 
 /*	@Test(priority=2)
 	public void loginApp1()
