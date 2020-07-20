@@ -1,5 +1,7 @@
 package com.learnautomation.testcases;
 
+import java.util.concurrent.TimeUnit;
+
 //import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -21,7 +23,7 @@ public class LoginTestCRM extends BaseClass{
 		logger.info("starting Details");
 		
 		loginPage.loginToCRM(excel.getStringData("Login",0,0),excel.getStringData("Login",0,1));
-		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		Helper.CaptureScreenshot(driver);
 		
 		logger.pass("Loggin successfully");

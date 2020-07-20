@@ -44,4 +44,23 @@
 </dependency>
  
   </dependencies>
+    <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M5</version>
+        <configuration>
+        <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+         <suiteXmlFiles>
+            <suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+     </plugin>
+  </plugins>
+ </build>
+  
 </project>

@@ -55,7 +55,7 @@ public class BaseClass {
 	public void teardown() throws InterruptedException
 	{
     	Thread.sleep(10000);
-    	driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+    	driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		BrowserFactory.quitBrowser(driver);	
 		
 	}
